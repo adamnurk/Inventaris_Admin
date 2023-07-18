@@ -10,13 +10,10 @@
     <title>Inventaris Rumah Sakit</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
-
-
     <script data-search-pseudo-elements defer
         src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous">
     </script>
-</head>
 </head>
 
 <body class="nav-fixed">
@@ -37,7 +34,8 @@
             <li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
                 <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage"
                     href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false"><img class="img-fluid" src="img/Group 708.png" /></a>
+                    aria-expanded="false"><img class="img-fluid"
+                        src="img/Group 708.png" /></a>
                 <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
                     aria-labelledby="navbarDropdownUserImage">
                     <h6 class="dropdown-header d-flex align-items-center">
@@ -89,12 +87,12 @@
                             <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
                         <div class="collapse" id="collapseDashboards" data-bs-parent="#accordionSidenav">
-                            <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPages">
+                            <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPagesMenu">
+
                                 <a class="nav-link" href="detail.html">Ruang Melati</a>
                                 <a class="nav-link" href="">Ruang Anggrek</a>
                                 <a class="nav-link" href="">Ruang ICU</a>
                                 <a class="nav-link" href="">Ruang Deandles</a>
-                                <a class="nav-link" href="">Ruang Mawar</a>
                                 <a class="nav-link" href="">Ruang Rajawali</a>
                             </nav>
                         </div>
@@ -103,7 +101,8 @@
                         <hr class="sidebar-divider text-black" style="background-color: #858796;">
 
                         <!-- Sidenav Accordion (Pages)-->
-                        <a class="nav-link collapsed" href="home.html" aria-expanded="false">
+                        <a class="nav-link collapsed" href="home.html" aria-expanded="false"
+                            aria-controls="collapsePages">
                             <div class="nav-link-icon"><i data-feather="grid"></i></div>
                             Dashboard
                         </a>
@@ -126,122 +125,131 @@
             </nav>
         </div>
         <div id="layoutSidenav_content">
-            <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-8">
-                <div class="container-xl px-4">
-                    <div class="page-header-content pt-4">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-auto mt-4">
-                                <h1 class="page-header-title">
-                                    <a href="home.html" class="btn btn-primary btn-back">
-                                        <div class="box-icon">
-                                            <i class="fas fa-reply"></i>
-                                        </div>
-                                    </a>
-                                    <span class="ml-2">Ruang Melati</span>
-                                </h1>
-                            </div>
-                            <div class="col-auto mt-4">
-                                <div class="d-flex align-items-center">
-                                    <input type="text" class="form-control mr-2" placeholder="Cari ruangan...">
+            <main>
+                <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+                    <div class="container-xl px-4">
+                        <div class="page-header-content pt-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-auto mt-4">
+                                    <h1 class="page-header-title">
+                                        Daftar Ruangan
+                                    </h1>
+                                </div>
+                                <div class="col-auto mt-4">
+                                    <div class="d-flex align-items-center">
+                                        <input type="text" class="form-control mr-2" placeholder="Cari ruangan..."> 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </header>
+                </header>
 
-            <!-- Main page content-->
-            <div class="container-xl px-4">
-                <!-- Knowledge base category-->
-                <h2 class="mb-0 mt-5">Jenis Ruangan Melati</h2>
-                <hr class="mt-2 mb-4" />
-                <!-- Knowledge base item-->
-                <div class="card card-icon lift lift-sm mb-4">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="h5 card-title mb-0">
-                                <a href="tables.html">Ruang Melati 1</a>
+                <!-- Main page content-->
+                <div class="container-xl px-4 mt-n10">
+                    <!-- Wizard card example with navigation-->
+                    <div class="card">
+
+                        <div class="card-header border-bottom">
+                            <!-- Wizard navigation-->
+                            <div class=container-xl px-4>
+                                <!-- Wizard navigation item 1-->
+                                <div class="card card-icon lift lift-sm mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="h5 card-title mb-0">
+                                                <a href="detail.html">Ruang Melati</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Wizard navigation item 2-->
+                                <div class="card card-icon lift lift-sm mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="h5 card-title mb-0">
+                                                <a href="detail.html">Ruang Anggrek</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Wizard navigation item 3-->
+                                <div class="card card-icon lift lift-sm mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="h5 card-title mb-0">
+                                                <a href="detail.html">Ruang ICU</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Wizard navigation item 4-->
+                                <div class="card card-icon lift lift-sm mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="h5 card-title mb-0">
+                                                <a href="detail.html">Ruang MAmbarwati</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Wizard navigation item 5-->
+                                <div class="card card-icon lift lift-sm mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="h5 card-title mb-0">
+                                                <a href="detail.html">Ruang Deandles</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Wizard navigation item 6-->
+                                <div class="card card-icon lift lift-sm mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="h5 card-title mb-0">
+                                                <a href="detail.html">Ruang Mawar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Wizard navigation item 7-->
+                                <div class="card card-icon lift lift-sm mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="h5 card-title mb-0">
+                                                <a href="detail.html">Ruang Rajawali</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-
-                <!-- Knowledge base item-->
-
-
-                <div class="card card-icon lift lift-sm mb-4">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="h5 card-title mb-0">
-                                <a href="tables.html">Ruang Melati 2</a>
+                        
+                        <footer class="footer-admin mt-auto footer-light">
+                            <div class="container-xl px-4">
+                                <div class="row">
+                                    <div class="col-md-6 small">Copyright &copy; Your Website 2021</div>
+                                    <div class="col-md-6 text-md-end small">
+                                        <a href="#!">Privacy Policy</a>
+                                        &middot;
+                                        <a href="#!">Terms &amp; Conditions</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </footer>
                     </div>
                 </div>
-
-                <!-- Knowledge base item-->
-                <div class="card card-icon lift lift-sm mb-4">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="h5 card-title mb-0">
-                                <a href="tables.html">Ruang Melati 3</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Knowledge base item-->
-                <div class="card card-icon lift lift-sm mb-4">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="h5 card-title mb-0">
-                                <a href="tables.html">Ruang Melati 4</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Knowledge base item-->
-                <div class="card card-icon lift lift-sm mb-4">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="h5 card-title mb-0">
-                                <a href="tables.html">Ruang Melati 5</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Knowledge base item-->
-                <div class="card card-icon lift lift-sm mb-4">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="h5 card-title mb-0">
-                                <a href="tables.html">Ruang Melati 6</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <footer class="footer-admin mt-auto footer-light">
-                <div class="container-xl px-4">
-                    <div class="row">
-                        <div class="col-md-6 small">Copyright &copy; Your Website 2021</div>
-                        <div class="col-md-6 text-md-end small">
-                            <a href="#!">Privacy Policy</a>
-                            &middot;
-                            <a href="#!">Terms &amp; Conditions</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
-    </script>
-    <script src="js/scripts.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                    crossorigin="anonymous">
+                </script>
+                <script src="js/scripts.js"></script>
 </body>
 
 </html>
