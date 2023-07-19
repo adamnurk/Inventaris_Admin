@@ -26,14 +26,11 @@
         <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0" id="sidebarToggle"><i
                 data-feather="menu"></i></button>
         <!-- Navbar Brand-->
-        <!-- * * Tip * * You can use text or an image for your navbar brand.-->
-        <!-- * * * * * * When using an image, we recommend the SVG format.-->
-        <!-- * * * * * * Dimensions: Maximum height: 32px, maximum width: 240px-->
-        <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="home.html">INVENTARIS RUMAH SAKIT</a>
+        <a class="navbar-brand" href="home.html">INVENTARIS RUMAH SAKIT</a>
 
         <!-- Navbar Items-->
         <ul class="navbar-nav align-items-center ms-auto">
-            <!-- User Dropdown-->
+            <!-- User Dropdown Navbar Logout-->
             <li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
                 <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage"
                     href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -48,7 +45,7 @@
                         </div>
                     </h6>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#!">
+                    <a class="dropdown-item" href="index.html">
                         <div class="dropdown-item-icon"><i data-feather="log-out"></i></div>
                         Logout
                     </a>
@@ -56,29 +53,14 @@
             </li>
         </ul>
     </nav>
+    
+    
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sidenav shadow-right sidenav-light">
                 <div class="sidenav-menu">
                     <div class="nav accordion" id="accordionSidenav">
-                        <!-- Sidenav Menu Heading (Account)-->
-                        <!-- * * Note: * * Visible only on and above the sm breakpoint-->
-                        <div class="sidenav-menu-heading d-sm-none">Account</div>
-                        <!-- Sidenav Link (Alerts)-->
-                        <!-- * * Note: * * Visible only on and above the sm breakpoint-->
-                        <a class="nav-link d-sm-none" href="#!">
-                            <div class="nav-link-icon"><i data-feather="bell"></i></div>
-                            Alerts
-                            <span class="badge bg-warning-soft text-warning ms-auto">4 New!</span>
-                        </a>
-                        <!-- Sidenav Link (Messages)-->
-                        <!-- * * Note: * * Visible only on and above the sm breakpoint-->
-                        <a class="nav-link d-sm-none" href="#!">
-                            <div class="nav-link-icon"><i data-feather="mail"></i></div>
-                            Messages
-                            <span class="badge bg-success-soft text-success ms-auto">2 New!</span>
-                        </a>
-                        <!-- Sidenav Menu Heading (Core)-->
+                        <!-- Sidenav Heading -->
                         <div class="sidenav-menu-heading">Daftar Ruangan</div>
                         <!-- Sidenav Accordion (Dashboard)-->
                         <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse"
@@ -98,9 +80,6 @@
                                 <a class="nav-link" href="">Ruang Rajawali</a>
                             </nav>
                         </div>
-
-                        <!-- Divider -->
-                        <hr class="sidebar-divider text-black" style="background-color: #858796;">
 
                         <!-- Sidenav Accordion (Pages)-->
                         <a class="nav-link collapsed" href="home.html" aria-expanded="false">
@@ -123,6 +102,7 @@
                     </div>
             </nav>
         </div>
+        
         <div id="layoutSidenav_content">
             <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-8">
                 <div class="container-xl px-4">
@@ -141,9 +121,6 @@
                             <div class="col-auto mt-4">
                                 <div class="d-flex align-items-center">
                                     <input type="text" class="form-control mr-2" placeholder="Cari ruangan...">
-                                    <button class="btn btn-primary" type="button" data-bs-toggle="modal"
-                                        data-bs-target="#tambahModal"><i class="fas fa-plus"></i></button>
-                            
                                 </div>
                             </div>
                         </div>
@@ -156,7 +133,7 @@
                 <!-- Knowledge base category-->
                 <h2 class="mb-0 mt-5">Jenis Ruangan Melati</h2>
                 <hr class="mt-2 mb-4" />
-                <!-- Knowledge base item-->
+                <!-- Card Peritem -->
                 <div class="card card-icon lift lift-sm mb-4">
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
@@ -166,11 +143,7 @@
                         </div>
                     </div>
                 </div>
-
-
-                <!-- Knowledge base item-->
-
-
+                <!-- Card Peritem -->
                 <div class="card card-icon lift lift-sm mb-4">
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
@@ -181,7 +154,7 @@
                     </div>
                 </div>
 
-                <!-- Knowledge base item-->
+                <!-- Card Peritem -->
                 <div class="card card-icon lift lift-sm mb-4">
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
@@ -192,7 +165,7 @@
                     </div>
                 </div>
 
-                <!-- Knowledge base item-->
+                <!-- Card Peritem -->
                 <div class="card card-icon lift lift-sm mb-4">
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
@@ -203,7 +176,7 @@
                     </div>
                 </div>
 
-                <!-- Knowledge base item-->
+                <!-- Card Peritem -->
                 <div class="card card-icon lift lift-sm mb-4">
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
@@ -214,7 +187,7 @@
                     </div>
                 </div>
 
-                <!-- Knowledge base item-->
+                <!-- Card Peritem -->
                 <div class="card card-icon lift lift-sm mb-4">
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
@@ -229,7 +202,7 @@
             <footer class="footer-admin mt-auto footer-light">
                 <div class="container-xl px-4">
                     <div class="row">
-                        <div class="col-md-6 small">Copyright &copy; Your Website 2021</div>
+                        <div class="col-md-6 small">Copyright &copy; Your Website 2023</div>
                         <div class="col-md-6 text-md-end small">
                             <a href="#!">Privacy Policy</a>
                             &middot;

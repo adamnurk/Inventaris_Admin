@@ -23,10 +23,7 @@
         <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0" id="sidebarToggle"><i
                 data-feather="menu"></i></button>
         <!-- Navbar Brand-->
-        <!-- * * Tip * * You can use text or an image for your navbar brand.-->
-        <!-- * * * * * * When using an image, we recommend the SVG format.-->
-        <!-- * * * * * * Dimensions: Maximum height: 32px, maximum width: 240px-->
-        <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="index.html">INVENTARIS RUMAH SAKIT</a>
+        <a class="navbar-brand" href="home.html">INVENTARIS RUMAH SAKIT</a>
 
         <!-- Navbar Items-->
         <ul class="navbar-nav align-items-center ms-auto">
@@ -45,7 +42,7 @@
                         </div>
                     </h6>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#!">
+                    <a class="dropdown-item" href="index.html">
                         <div class="dropdown-item-icon"><i data-feather="log-out"></i></div>
                         Logout
                     </a>
@@ -58,23 +55,6 @@
             <nav class="sidenav shadow-right sidenav-light">
                 <div class="sidenav-menu">
                     <div class="nav accordion" id="accordionSidenav">
-                        <!-- Sidenav Menu Heading (Account)-->
-                        <!-- * * Note: * * Visible only on and above the sm breakpoint-->
-                        <div class="sidenav-menu-heading d-sm-none">Account</div>
-                        <!-- Sidenav Link (Alerts)-->
-                        <!-- * * Note: * * Visible only on and above the sm breakpoint-->
-                        <a class="nav-link d-sm-none" href="#!">
-                            <div class="nav-link-icon"><i data-feather="bell"></i></div>
-                            Alerts
-                            <span class="badge bg-warning-soft text-warning ms-auto">4 New!</span>
-                        </a>
-                        <!-- Sidenav Link (Messages)-->
-                        <!-- * * Note: * * Visible only on and above the sm breakpoint-->
-                        <a class="nav-link d-sm-none" href="#!">
-                            <div class="nav-link-icon"><i data-feather="mail"></i></div>
-                            Messages
-                            <span class="badge bg-success-soft text-success ms-auto">2 New!</span>
-                        </a>
                         <!-- Sidenav Menu Heading (Core)-->
                         <div class="sidenav-menu-heading">Daftar Ruangan</div>
                         <!-- Sidenav Accordion (Dashboard)-->
@@ -96,9 +76,6 @@
                             </nav>
                         </div>
 
-                        <!-- Divider -->
-                        <hr class="sidebar-divider text-black" style="background-color: #858796;">
-
                         <!-- Sidenav Accordion (Pages)-->
                         <a class="nav-link collapsed" href="index.html" aria-expanded="false"
                             aria-controls="collapsePages">
@@ -115,10 +92,9 @@
                         <div class="collapse" id="collapseUtilities" data-bs-parent="#accordionSidenav">
                             <nav class="sidenav-menu-nested nav">
                                 <a class="nav-link" href="daftar-akun.html">Daftar Akun</a>
-                                <a class="nav-link" href="background.html">Logout</a>
+                                <a class="nav-link" href="index.html">Logout</a>
                             </nav>
                         </div>
-                        <!-- Sidenav Link (Charts)-->
                     </div>
 
             </nav>
@@ -154,7 +130,7 @@
                                 <div class="card-header">Detail Akun</div>
                                 <div class="card-body">
                                     <form>
-                                        <!-- Form Row-->
+                                        <!-- Form Row nama -->
                                         <div class="row gx-3">
                                             <div class="col-md-6">
                                                 <!-- Form Group (first name)-->
@@ -173,24 +149,23 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Form Group (email address)            -->
+                                        <!-- Form username -->
                                         <div class="mb-3">
                                             <label class="small mb-1" for="inputUsername">Username</label>
                                             <input class="form-control" id="inputUsername" type="text"
                                                 placeholder="Enter your username" value="username" />
                                         </div>
 
-                                        <!-- Form Row    -->
-                                        <div class="row gx-3">
-                                            <!-- Form Group (password)-->
-                                            <div class="mb-3">
-                                                <label class="small mb-1" for="inputPassword">Password</label>
-                                                <input class="form-control" id="inputPassword" type="password"
-                                                    placeholder="Masukan password" />
-                                            </div>
+                                        <!-- Form Password -->
+
+                                        <div class="mb-3">
+                                            <label class="small mb-1" for="inputPassword">Password</label>
+                                            <input class="form-control" id="inputPassword" type="password"
+                                                placeholder="Masukan password" />
                                         </div>
-                                        <!-- Form Group (create account submit)-->
-                                        <a class="btn btn-primary btn-block" href="auth-login-basic.html">Buat Akun</a>
+
+                                        <!-- button buat akun-->
+                                        <a class="btn btn-primary btn-block" href="daftar-akun.html">Buat Akun</a>
                                     </form>
                                 </div>
                             </div>
